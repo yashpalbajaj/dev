@@ -70,6 +70,16 @@
 			<failOnMissingWebXml>false</failOnMissingWebXml>
 		</configuration>
 	</plugin>
+	
+	<plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.2</version>
+            <configuration>
+                <port>8090</port>   
+                <path>http://100.25.21.116</path>   //Configure application root URL
+            </configuration>
+        </plugin>
 
         <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
